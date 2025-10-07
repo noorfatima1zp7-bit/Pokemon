@@ -1,0 +1,816 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+  
+
+
+</head>
+
+<body>
+
+  <style>
+    *{
+   margin: 0; 
+   padding: 0;
+}
+.box{
+    margin-top: 0%;
+    padding-top: 0%;
+    display: flex;
+    /* margin-left: 20%; */
+    justify-content: center;
+      box-shadow: 0 12px 25px rgba(0, 0, 0, 0.027); /* Deeper on hover */
+
+ /* Deeper on hover */
+
+}
+.logo{
+    display: flex;
+}
+.one{
+      box-shadow: 0 12px 25px rgba(0, 0, 0, 0.322); /* Deeper on hover */
+}
+.two{
+      box-shadow: 0 12px 25px rgba(0, 0, 0, 0.562); /* Deeper on hover */
+
+}
+.three{
+      box-shadow: 0 12px 25px rgba(0, 0, 0, 0.562); /* Deeper on hover */
+
+}
+.four{
+      box-shadow: 0 12px 25px rgba(0, 0, 0, 0.562); /* Deeper on hover */
+
+}
+.five{
+      box-shadow: 0 12px 25px rgba(0, 0, 0, 0.562); /* Deeper on hover */
+
+}
+.six{
+      box-shadow: 0 12px 25px rgba(0, 0, 0, 0.562); /* Deeper on hover */
+
+}
+.home{
+    /* display: inline-block; */
+    margin-left: 27%;
+    font-size:larger;
+    color: white;
+    /* background-color: grey; */
+}
+.pok{
+    display: flex;
+}
+.bd{
+      background-color: rgba(255, 255, 0, 0.678);
+}
+
+/* Remove top/bottom space of navbar */
+.navbar-custom {
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
+}
+
+/* Reset nav items */
+.nav-item {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+/* Reset nav links (so only your p-3 applies) */
+.nav-link {
+  margin: 0 !important;
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+}
+.pink{
+  color:  pink;
+}
+.footer {
+  width: 100%;
+  background-color: black;
+  color: white;
+  padding: 1rem 0; /* smaller top & bottom spacing */
+  margin: 0;
+  font-size: 1rem;
+}
+
+.hyt{
+     display: flex; 
+}
+.card-text {
+  white-space: nowrap;
+  overflow-x: hidden;
+  text-overflow: ellipsis;
+}
+
+  </style>
+    <div class="box fixed-top img-fluid">
+        <img class="one" src="logo.png">
+        <img class="two" src="logo 2.png">
+        <img class="three" src="logo 3.png">
+        <img class="four" src="logo 4.png">
+        <img class="five" src="logo 5.png">
+        <img class="six" src="logo 6.png">
+    </div><br><br><br>
+
+
+<!-- Navbar -->
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pokemon Navbar</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    .navbar-custom {
+      background-color: #fff;
+      border-bottom: 2px solid #ddd;
+    }
+    .nav-link {
+      font-weight: 500;
+      color: #333 !important;
+      padding: 12px 18px;
+    
+
+    }
+    .nav-link.active {
+     /* Highlight bar under active tab */
+      color: #000 !important;
+    }
+    .nav-link:hover {
+    }
+    /* Colorful underline strip */
+    .color-strip {
+      height: 5px;
+      background: linear-gradient(to right, orange, yellow, green, blue);
+    }
+    .txt{
+      text-align: center;
+      justify-content: center;
+      font-size: large;
+    }
+    .red .nav-link {
+  background-color: #f8f9fa; /* default light grey */
+  color: white; /* black text */
+  border-radius: 6px; /* optional rounded corners */
+  transition: 0.3s ease-in-out;
+}
+.red .nav-link:hover {
+  background-color: red; /* orange on hover */
+  color: white !important; /* text/icon turns white */
+}
+.orange .nav-link:hover {
+  background-color:orange; /* orange on hover */
+  color: white !important; /* text/icon turns white */
+}
+.orange .nav-link {
+  background-color: #f8f9fa; /* default light grey */
+  color: white; /* black text */
+  border-radius: 6px; /* optional rounded corners */
+  transition: 0.3s ease-in-out;
+}
+.yellow .nav-link:hover {
+  background-color:rgba(255, 166, 0, 0.692); /* orange on hover */
+  color: white !important; /* text/icon turns white */
+}
+.yellow .nav-link {
+  background-color: #f8f9fa; /* default light grey */
+  color: white; /* black text */
+  border-radius: 6px; /* optional rounded corners */
+  transition: 0.3s ease-in-out;
+}
+.green .nav-link:hover {
+  background-color:green; /* orange on hover */
+  color: white !important; /* text/icon turns white */
+}
+.green .nav-link {
+  background-color: #f8f9fa; /* default light grey */
+  color: white; /* black text */
+  border-radius: 6px; /* optional rounded corners */
+  transition: 0.3s ease-in-out;
+}
+.blue .nav-link:hover {
+  background-color:lightskyblue; /* orange on hover */
+  color: white !important; /* text/icon turns white */
+}
+.blue .nav-link {
+  background-color: #f8f9fa; /* default light grey */
+  color: white; /* black text */
+  border-radius: 6px; /* optional rounded corners */
+  transition: 0.3s ease-in-out;
+}
+.purple .nav-link:hover {
+  background-color:purple; /* orange on hover */
+  color: white !important; /* text/icon turns white */
+}
+.purple .nav-link {
+  background-color: #f8f9fa; /* default light grey */
+  color: white; /* black text */
+  border-radius: 6px; /* optional rounded corners */
+  transition: 0.3s ease-in-out;
+}
+
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+   <nav class="navbar navbar-expand-lg navbar-custom">
+  <div class="container">
+      <ul class="navbar-nav mx-auto">
+        <li class="nav-item">
+          <a class="nav-link d-flex flex-column align-items-center p-3 bg-secondary text-white" href="#">
+            <i class="fa-solid fa-house mb-2"></i>
+            Home</a>
+        </li>
+        <li class="nav-item red">
+          <a class="nav-link d-flex flex-column align-items-center p-3" href="pokedox.html">
+            <i class="fa-solid fa-bullseye mb-2"></i>
+            Pokédex</a>
+        </li>
+        <li class="nav-item orange">
+          <a class="nav-link d-flex flex-column align-items-center p-3" href="video.html">
+            <i class="fa-solid fa-video mb-2"></i>
+            Video Games &
+            Apps</a>
+        </li>
+        <li class="nav-item yellow">
+          <a class="nav-link d-flex flex-column align-items-center p-3" href="game.html">
+            <i class="fa-solid fa-sd-card mb-2"></i>
+            Trading Card Game</a>
+        </li>
+        <li class="nav-item green">
+          <a class="nav-link d-flex flex-column align-items-center p-3" href="animation.html">
+           <i class="fa-solid fa-play mb-2"></i>
+            Animation</a>
+        </li>
+        <li class="nav-item blue">
+          <a class="nav-link d-flex flex-column align-items-center p-3" href="Events.html">
+           <i class="fa-solid fa-trophy mb-2"></i>
+            Play! Pokémon Events</a>
+        </li>
+        <li class="nav-item purple">
+          <a class="nav-link d-flex flex-column align-items-center p-3" href="News.html">
+           <i class="fa-solid fa-newspaper mb-2"></i>
+          News</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Colorful Line -->
+  <div class="color-strip"></div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+
+
+
+
+  
+
+
+  
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pokemon Bootstrap Grid Layout</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <style>
+    .card-custom {
+      position: relative;
+      border-radius: 8px;
+      overflow: hidden;
+      background: #fff;
+    }
+
+    .card-custom img {
+      width: 100%;
+      display: block;
+    }
+.yes{
+  background-color: blue;
+  color: white;
+text-align: left;
+}
+    .caption {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background: rgba(0, 0, 0, 0.6); /* semi-transparent black */
+      color: #fff;
+      padding: 12px;
+      font-size: 14px;
+      font-weight: 500;
+    }
+
+    /* Special yellow caption for top big card */
+    .top-card .caption {
+      background: orangered;
+      color: white;
+      font-weight: bold;
+    }
+
+    /* Special green box */
+    .green-box {
+      background: #3bb143;
+      color: #fff;
+      text-align: center;
+      padding: 40px 20px;
+      border-radius: 8px;
+      font-weight: bold;
+      font-size: 18px;
+      display: flex;
+      height: 50%;
+    }
+    .green-card .caption {
+  background: #3bb143;
+  height: 50%;         /* takes half the card */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 18px;
+  color: #fff;
+}
+.card-custom {
+  position: relative;
+  border-radius: 8px;
+  overflow: hidden;
+  background: #fff;
+}
+
+.card-custom img {
+  width: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+.caption {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: burlywood; /* semi-transparent black */
+  color: #fff;
+  padding: 12px;
+  font-size: 14px;
+  font-weight: 500;
+}
+.No{
+  background-color:lightseagreen ;
+  color: white;
+}
+.po{
+  background-color: burlywood;
+  color: white;
+}
+.cap{
+    background-color: black;
+    color: white;
+}
+  </style>
+</head>
+<body class="bg-light">
+    <h1 style="color: gray; text-align: center;">Play Pokemon Events!</h1>
+
+<div class="container my-4">
+  <div class="row g-3">
+    
+    <!-- Left Column -->
+    <div class="col-lg-8">
+      <!-- Top Large Card -->
+      <div class="card-custom top-card mb-3">
+        <img src="L 1.png"  alt="Main" width="100">
+        <div class="caption text-center">Get ready to register online for the 2026 LAIC taking place November 21-23,2025, in Sao Paulo, Brazil.</div>
+      </div>
+
+      <!-- Bottom Two Cards -->
+      <div class="row g-3 mb-3">
+        <div class="col-md-6">
+          <div class="card-custom">
+            <img src="L 5.png" alt="Card 1">
+            <div class="No text-center">Champion's Spotlight:Kevin Han Wins Back-to-Back World Championships</div>
+          </div>
+        </div>
+        <div class="col-md-6 mb-3">
+          <div class="card-custom">
+            <img src="L 6.png" alt="Card 2">
+            <div class="po text-center">Get the Latest Information on the 2026 Pokemon Championship Series</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Right Column -->
+    <div class="col-lg-3">
+      <div class="card-custom mb-2">
+        <img src="L 2.png" alt="Right 1">
+        <div class="yes text-center">Play Pokemon at Your Local League
+     </div>
+      </div>
+     <div class="card-custom mb-3">
+  <img src="L 3.png" 
+       class="w-300" height="200"
+       alt="Right Last Card">
+  <div class="caption text-center">Compete in Pokemon Championship Events</div>
+</div>
+
+     <!-- Right Last Card -->
+      <div class="card-custom mb-3">
+  <img src="L 4.png" 
+       class="w-300" height="200"
+       alt="Right Last Card">
+  <div class="cap text-center">Watch Pokemon Tournaments</div>
+</div>
+    </div><br><br><br>
+
+
+
+
+
+
+
+<div class="container my-4">
+  <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-3">
+    
+    <div class="col">
+      <div class="card bg-dark text-white h-100">
+        <img src="At 1.png" class="card-img-top" alt="Nine Tales">
+        <div class="card-body">
+          <p class="card-text text-center">Pokemon Atlanta Regional<br> Championships</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="col">
+      <div class="card bg-dark text-white h-100">
+        <img src="At 2.png" class="card-img-top" alt="Mamoswine">
+        <div class="card-body">
+          <p class="card-text text-center">Pokemon World Championships</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="col">
+      <div class="card bg-dark text-white h-100">
+        <img src="At 3.png" class="card-img-top" alt="Kyogre">
+        <div class="card-body">
+          <p class="card-text text-center">Pokemon North America <br>International Championships</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- <div class="col">
+      <div class="card bg-dark text-white h-100">
+        <img src="EN 4.png" class="card-img-top" alt="Porygon">
+        <div class="card-body">
+          <p class="card-text text-center">Carracosta</p>
+        </div>
+      </div>
+    </div> -->
+
+    <!-- <div class="col">
+      <div class="card bg-dark text-white h-100">
+        <img src="EN 5.png" class="card-img-top" alt="Xerneas">
+        <div class="card-body">
+          <p class="card-text">Xerneas</p>
+        </div>
+      </div>
+    </div> -->
+
+  </div>
+</div>
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pokemon News Cards</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    /* Custom News Section */
+    .poke-news-card {
+      border: none;
+      border-radius: 10px;
+      overflow: hidden;
+      color: #fff;
+      height: 100%;
+    }
+    .poke-news-card img {
+      width: 100%;
+      height: 160px;
+      object-fit: cover;
+    }
+    .poke-news-body {
+      padding: 15px;
+    }
+    /* Different background colors */
+    .news-orange { background-color: #f59f00; }
+    .news-brown  { background-color: #b08d57; }
+    .news-green  { background-color: #2f9e44; }
+    .news-red    { background-color: #e03131; }
+    .news-blue   { background-color: #1971c2; }
+    .news-purple { background-color: #7048e8; }
+
+    .poke-news-title {
+      font-weight: bold;
+      font-size: 1rem;
+      margin-bottom: 8px;
+    }
+    .poke-news-text {
+      font-size: 0.9rem;
+      margin: 0;
+    }
+    /* Center text block */
+    .news-center-block {
+      background: transparent;
+      color: #000;
+      font-weight: bold;
+      font-size: 1.3rem;
+      text-align: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      /* height: 100%; */
+    }
+    .lifted-card{
+      margin-top: -1.25em;
+      margin-bottom: 3.125em;
+    }
+    .third{
+      margin-left: 50%;
+      margin-top: -0.3125em;
+    }
+    .gtr{
+      margin-top: -4.0625em;
+    }
+    .br{
+      margin-top: -40px;
+    }
+    .tr{
+      margin-top: -0.9375em;
+
+    }
+    .ctr{
+      margin-top: -70px;
+      margin-left: 5px;
+    }
+    .tgr{
+      margin-top: -75px;
+
+    }
+    .gr{
+      margin-left: 660px;
+      margin-top: -25px;
+    }
+  .fd{
+background-color: orangered;
+  }
+  .bg{
+background-color: #1971c2;
+  }
+  
+  </style>
+</head>
+<body>
+
+<div class="container mt-5 grid">
+  <div class="row g-3">
+
+    <!-- Card 1 -->
+    <div class="col-12 col-md-6 col-lg-3 p-3 h-100">
+      <div class="poke-news-card news-orange">
+        <img src="me 1.png" alt="News 1">
+        <div class="poke-news-body">
+          <h5 class="poke-news-title text-white">Get New Cards from Pokémon TCG: Mega Evolution Early</h5>
+          <p class="poke-news-text text-black">Open booster packs from the Mega Evolution Build & Battle Box at a Prerelease event near you...</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Card 2 -->
+    <div class="col-12 col-md-6  col-lg-3 lifted-card h-100">
+      <div class="poke-news-card news-brown">
+        <img src="W 1.png" alt="News 2">
+        <div class="poke-news-body">
+          <h5 class="poke-news-title text-white">Partner Up with Shiny Koraidon or Miraidon</h5>
+          <p class="poke-news-text text-black">Visit your local GameStop or EB Games to get one of these Shiny Legendary Pokémon.Take photos with mega-sized cards from PokemonTCG:Mega Evolution,Collect Stamps and snag Pokemon TCG fun packs at this fun weekend.</p>
+        </div>
+      </div>
+    </div>
+ 
+
+    <!-- Card 3 -->
+    <div class="col-12 col-md-6 col-lg-3 p-3 h-100">
+      <div class="poke-news-card news-green card">
+        <img src="W 2.png" alt="News 3">
+        <div class="poke-news-body">
+          <h5 class="poke-news-title text-white">Marvel at Massive Artwork Mega-Evolution Discovery</h5>
+          <p class="poke-news-text text-black">See giant Pokémon cards at the Mega Evolution Discovery event in Los Angeles Spectacular taken-over event.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+    <!-- Center Text Block -->
+    <!-- <div class="col-12 col-md-6 col-lg-2"> -->
+      <!-- <div class="news-center-block">What's New This Week</div> -->
+    <!-- </div> -->
+
+    <!-- Card 4 -->
+     <div class="row">
+    <div class="col-12 col-md-6 col-lg-3 h-100 ctr">
+      <div class="poke-news-card news-blue">
+        <img src="W 3.png" alt="News 4">
+        <div class="poke-news-body">
+          <h5 class="poke-news-title text-white">Miltank and Phanpy Star</h5>
+          <p class="poke-news-text text-black">These Pokémon shine in the Pokémon TCG Pocket Wonder Pack series.</p>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- Card 5 -->
+    <div class="col-12 col-md-6 col-lg-3 h-100 br">
+      <div class="poke-news-card news-purple">
+        <img src="W 4.jpg" alt="News 5">
+        <div class="poke-news-body">
+          <h5 class="poke-news-title text-white">Suicune ex Makes Waves</h5>
+          <p class="poke-news-text text-black">Learn strategies for building a powerful deck with Suicune ex.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-12 col-md-6 col-lg-3 h-100 tgr">
+      <div class="poke-news-card news-purple">
+        <img src="W 5.png" alt="News 5">
+        <div class="poke-news-body">
+          <h5 class="poke-news-title text-white">Suicune ex Makes Waves</h5>
+          <p class="poke-news-text text-black ">Learn strategies for building a powerful deck with Suicune ex.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+<div class="row">
+    <div class=" col-md-6 col-lg-3 h-100 gr">
+      <div class="poke-news-card news-orange">
+        <div class="poke-news-body">
+          <h5 class="poke-news-title  news-orange  text-white">View all News</h5></div>
+          <p class="poke-news-text p-4 news-blue text-black">Keep up with all the latest developments.</p>
+        
+      </div>
+    </div>
+</div>
+
+
+
+<style>
+  .footer {
+  width: 100%; 
+  height: fit-content;                /* full width */
+  background-color: black;
+  color: white;
+  padding: 2rem 0;             /* flexible vertical spacing */
+  margin: 0;                   /* no negative margins */
+  font-size: 1rem;             /* base text size (scales with root font-size) */
+}
+
+
+
+</style>
+
+
+
+<footer class="footer-cover d-flex align-items-center text-white mt-5 footer">
+  <div class="container">
+    <div class="row">
+
+      <!-- Signup Column -->
+      <div class="col-lg-6 mb-4">
+        <h2 class="fw-bold">Sign up for Pokémon emails!</h2>
+        <form>
+          <div class="mb-2">
+            <input type="email" class="form-control" placeholder="Email">
+          </div>
+          <div class="d-flex mb-2">
+            <select class="form-select me-2">
+              <option selected>United States</option>
+              <option>Canada</option>
+              <option>UK</option>
+            </select>
+            <input type="text" class="form-control" placeholder="Birthday">
+          </div>
+          <button class="btn btn-secondary w-100 mb-3">SIGN UP</button>
+
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" checked>
+            <label class="form-check-label">
+              Pokémon video games, apps, and more
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" checked>
+            <label class="form-check-label">
+              Pokémon Center (our official online shop)
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox">
+            <label class="form-check-label">
+              I accept the Pokémon.com 
+              <a href="#" class="text-white text-decoration-underline">Terms of Use</a> and 
+              <a href="#" class="text-white text-decoration-underline">Privacy Notice</a>
+            </label>
+          </div>
+        </form>
+      </div>
+
+      <!-- Company Links Column -->
+      <div class="col-lg-6">
+        <h2 class="fw-bold">The Pokémon Company</h2>
+        <ul class="list-unstyled">
+          <li><a href="#" class="text-white text-decoration-none">News</a></li>
+          <li><a href="#" class="text-white text-decoration-none">Parents Guide</a></li>
+          <li><a href="#" class="text-white text-decoration-none">Customer Service</a></li>
+          <li><a href="#" class="text-white text-decoration-none">About Our Company</a></li>
+          <li><a href="#" class="text-white text-decoration-none">Careers</a></li>
+          <li><a href="#" class="text-white text-decoration-none">Select a Country/Region</a></li>
+          <li><a href="#" class="text-white text-decoration-none">Press Site</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Divider -->
+    <hr class="border-secondary">
+
+    <div class="row align-items-center">
+      <!-- Social Icons -->
+      <div class="col-md-6 mb-3">
+        <a href="#" class="text-blue me-3"><i class="bi bi-facebook fs-4"></i></a>
+        <a href="#" class="text-white me-3"><i class="bi bi-twitter-x fs-4"></i></a>
+        <a href="#" class="text-danger me-3"><i class="bi bi-youtube fs-4"></i></a>
+        <a href="#" class="pink me-3"><i class="bi bi-instagram fs-4"></i></a>
+        <a href="#" class="text-danger me-3"><i class="bi bi-pinterest fs-4"></i></a>
+      </div>
+
+      <!-- Logos + Legal -->
+      <div class="col-md-6 text-md-end text-center">
+        <img src="Caru.png" alt="CARU Safe Harbor" class="img-fluid" style="max-height:40px;">
+        <p class="small mb-0">
+          &copy;2025 Pokémon. ©1995–2025 Nintendo/Creatures Inc./GAME FREAK inc. TM, ® Nintendo.
+        </p>
+        <p class="small mb-0">
+          <a href="#" class="text-white text-decoration-none">Terms of Use</a> | 
+          <a href="#" class="text-white text-decoration-none">Privacy Notice</a> | 
+          <a href="#" class="text-white text-decoration-none">Cookie Page</a> | 
+          <a href="#" class="text-white text-decoration-none">Legal Info</a> | 
+          <a href="#" class="text-white text-decoration-none">Security</a>
+        </p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+
+
+
+
+ 
+
+<!-- Bootstrap Icons -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+
+
+     
+    
+
+    
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+
+
+ 
+    
